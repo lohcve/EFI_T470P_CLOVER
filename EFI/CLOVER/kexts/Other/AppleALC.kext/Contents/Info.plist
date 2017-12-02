@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>17A352a</string>
+	<string>17B48</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1.4</string>
+	<string>1.2.2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,21 +25,21 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.1.4</string>
+	<string>1.2.2</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>8E3004b</string>
+	<string>9B55</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>16E185</string>
+	<string>17B41</string>
 	<key>DTSDKName</key>
-	<string>macosx10.12</string>
+	<string>macosx10.13</string>
 	<key>DTXcode</key>
-	<string>0833</string>
+	<string>0910</string>
 	<key>DTXcodeBuild</key>
-	<string>8E3004b</string>
+	<string>9B55</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>as.vit9696.AppleALC</key>
@@ -63,7 +63,7 @@
 	<key>OSBundleLibraries</key>
 	<dict>
 		<key>as.vit9696.Lilu</key>
-		<string>1.1.0</string>
+		<string>1.2.0</string>
 		<key>as.vit9696.PinConfigs</key>
 		<string>1.0.0</string>
 		<key>com.apple.kpi.bsd</key>

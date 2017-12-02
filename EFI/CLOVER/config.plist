@@ -937,6 +937,13 @@
 				<string>FA000000</string>
 			</dict>
 		</array>
+		<key>Audio</key>
+		<dict>
+			<key>Inject</key>
+			<string>47</string>
+			<key>ResetHDA</key>
+			<true/>
+		</dict>
 		<key>FakeID</key>
 		<dict>
 			<key>IntelGFX</key>
@@ -1005,8 +1012,6 @@
 		<true/>
 		<key>Debug</key>
 		<false/>
-		<key>FakeCPUID</key>
-		<string>0x0506E3</string>
 		<key>KernelCpu</key>
 		<false/>
 		<key>KernelLapic</key>
@@ -1436,7 +1441,7 @@
 	<key>SystemParameters</key>
 	<dict>
 		<key>InjectKexts</key>
-		<string>Detect</string>
+		<string>Yes</string>
 		<key>InjectSystemID</key>
 		<true/>
 		<key>NoCaches</key>
