@@ -17,6 +17,8 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
+				<key>AddPNLF</key>
+				<true/>
 				<key>FixHPET</key>
 				<true/>
 				<key>FixHeaders</key>
@@ -807,7 +809,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-disablegfxfirmware -lilubeta -igdvmtbeta -igfxbeta</string>
+		<string>nv_disable=1 -disablegfxfirmware -lilubeta -igdvmtbeta -igfxbeta</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -937,17 +939,10 @@
 				<string>FA000000</string>
 			</dict>
 		</array>
-		<key>Audio</key>
-		<dict>
-			<key>Inject</key>
-			<string>47</string>
-			<key>ResetHDA</key>
-			<true/>
-		</dict>
 		<key>FakeID</key>
 		<dict>
 			<key>IntelGFX</key>
-			<string>0x19160000</string>
+			<string>0x591b8086</string>
 		</dict>
 		<key>USB</key>
 		<dict>
@@ -988,8 +983,6 @@
 	</dict>
 	<key>Graphics</key>
 	<dict>
-		<key>DualLink</key>
-		<integer>1</integer>
 		<key>Inject</key>
 		<dict>
 			<key>ATI</key>
@@ -1002,7 +995,7 @@
 		<key>NvidiaSingle</key>
 		<false/>
 		<key>ig-platform-id</key>
-		<string>0x19120000</string>
+		<string>0x591b0000</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -1400,17 +1393,17 @@
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP133.88Z.0233.B00.1708080034</string>
+		<string>MBP143.88Z.0167.B00.1708080129</string>
 		<key>Board-ID</key>
-		<string>Mac-A5C67F76ED83108C</string>
+		<string>Mac-551B86E5744E2388</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02718130GUDP00JC</string>
+		<string>C02652310QXF652JC</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
-		<string>MacBookPro13,3</string>
+		<string>1.0</string>
 		<key>ChassisAssetTag</key>
 		<string>MacBook-Aluminum</string>
 		<key>ChassisManufacturer</key>
@@ -1432,16 +1425,18 @@
 		<key>PlatformFeature</key>
 		<string>0x1A</string>
 		<key>ProductName</key>
-		<string>MacBookPro13,3</string>
+		<string>MacBookPro14,3</string>
 		<key>SerialNumber</key>
-		<string>C02TP1PAGTFN</string>
+		<string>C02T12I6HTD5</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
+		<key>BacklightLevel</key>
+		<string>0x0300</string>
 		<key>InjectKexts</key>
-		<string>Yes</string>
+		<string>Detect</string>
 		<key>InjectSystemID</key>
 		<true/>
 		<key>NoCaches</key>
