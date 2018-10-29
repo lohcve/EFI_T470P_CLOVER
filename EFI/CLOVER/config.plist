@@ -226,7 +226,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-alcbeta -igfxdump -v -lilubetaall -disablegfxfirmware -wegdbg darkwake=8</string>
+		<string>-alcbeta keepsyms=1 -lilubetaall darkwake=8</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -342,7 +342,7 @@
 				</data>
 				<key>framebuffer-unifiedmem</key>
 				<data>
-				AAAAwA==
+				AAAAYA==
 				</data>
 			</dict>
 		</dict>
