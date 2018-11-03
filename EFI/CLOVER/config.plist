@@ -236,7 +236,7 @@
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>2</integer>
+		<integer>1</integer>
 		<key>XMPDetection</key>
 		<false/>
 	</dict>
@@ -284,25 +284,13 @@
 				<data>
 				/////w==
 				</data>
-				<key>framebuffer-con2-type</key>
-				<data>
-				AAgAAA==
-				</data>
 				<key>framebuffer-fbmem</key>
 				<data>
 				AACQAA==
 				</data>
-				<key>framebuffer-memorycount</key>
-				<data>
-				AgAAAA==
-				</data>
 				<key>framebuffer-patch-enable</key>
 				<data>
 				AQAAAA==
-				</data>
-				<key>framebuffer-pipecount</key>
-				<data>
-				AgAAAA==
 				</data>
 				<key>framebuffer-portcount</key>
 				<data>
@@ -330,7 +318,7 @@
 			<true/>
 		</dict>
 		<key>UseIntelHDMI</key>
-		<false/>
+		<true/>
 	</dict>
 	<key>GUI</key>
 	<dict>
