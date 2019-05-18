@@ -293,12 +293,14 @@
 				<key>PluginType</key>
 				<true/>
 			</dict>
+			<key>PluginType</key>
+			<string>1</string>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>keepsyms=1 darkwake=8 lilucpu=8 -igfxnohdmi</string>
+		<string>keepsyms=1 darkwake=8 lilucpu=9 -igfxnohdmi</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -334,11 +336,23 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>
-				AAAbGQ==
+				AAAWWQ==
 				</data>
 				<key>device-id</key>
 				<data>
-				FhkAAA==
+				FlkAAA==
+				</data>
+				<key>disable-external-gpu</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>enable-hdmi20</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-fbmem</key>
+				<data>
+				AACQAA==
 				</data>
 				<key>framebuffer-patch-enable</key>
 				<data>
@@ -347,10 +361,6 @@
 				<key>framebuffer-stolenmem</key>
 				<data>
 				AAAwAQ==
-				</data>
-				<key>framebuffer-fbmem</key>
-				<data>
-				AACQAA==
 				</data>
 			</dict>
 		</dict>
