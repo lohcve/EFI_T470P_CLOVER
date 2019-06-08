@@ -336,7 +336,7 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>
-				AAAbGQ==
+				AAAWGQ==
 				</data>
 				<key>AAPL,slot-name</key>
 				<string>Internal</string>
@@ -568,7 +568,7 @@
 				AIoChMB0
 				</data>
 				<key>MatchOS</key>
-				<string>10.14.4,10.14.5</string>
+				<string>10.14.4,10.14.5,10.15</string>
 				<key>Replace</key>
 				<data>
 				AIoChMDr
