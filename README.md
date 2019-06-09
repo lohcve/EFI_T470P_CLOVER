@@ -58,9 +58,9 @@
 - 更新各种驱动到最新版本<br/>
 <br/>
 
-#### 2019-06-08更新：<br/>
-- 更新Clover到4954<br/>
-- 更新Lilu、WhateverGreen到最新版本<br/>
+#### 2019-06-09更新：<br/>
+- 更新Clover到4959<br/>
+- 更新Lilu、WhateverGreen等各种驱动到最新版本<br/>
 - 更新支持Catalina 10.15 Beta1<br/>
 - 提供两种核显设置方案，如下：<br/>
 - config-14,1,1916.plist：默认方案，机型14,1，仿冒1916，存在HEVC硬解失败问题；<br/>
