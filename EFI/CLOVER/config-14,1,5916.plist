@@ -6,28 +6,32 @@
 	<dict>
 		<key>AutoMerge</key>
 		<true/>
+		<key>Comment-DisabledAML</key>
+		<string>Disable other forms of CPU PM due to SSDT/Generate/PluginType=true</string>
 		<key>DSDT</key>
 		<dict>
-			<key>Debug</key>
-			<false/>
 			<key>DropOEM_DSM</key>
 			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>AddPNLF</key>
-				<true/>
 				<key>FixHPET</key>
-				<false/>
+				<true/>
 				<key>FixIPIC</key>
-				<false/>
+				<true/>
+				<key>FixRTC</key>
+				<true/>
 				<key>FixRegions</key>
+				<true/>
+				<key>FixShutdown</key>
+				<false/>
+				<key>FixTMR</key>
 				<true/>
 			</dict>
 			<key>Patches</key>
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>change _DSM to XSDM</string>
+					<string>change _DSM to XDSM</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -37,20 +41,6 @@
 					<key>Replace</key>
 					<data>
 					WERTTQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change OSID to IDOS</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					T1NJRA==
-					</data>
-					<key>Replace</key>
-					<data>
-					SURPUw==
 					</data>
 				</dict>
 				<dict>
@@ -69,16 +59,16 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change HDAS to HDEF</string>
+					<string>change GFX0 to IGPU</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					SERBUw==
+					R0ZYMA==
 					</data>
 					<key>Replace</key>
 					<data>
-					SERFRg==
+					SUdQVQ==
 					</data>
 				</dict>
 				<dict>
@@ -97,58 +87,16 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>chang BRT6 to BRTX</string>
+					<string>change SAT1 to SATA</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
-					IEJSVDY=
-					</data>
-					<key>Replace</key>
-					<data>
-					IEJSVFg=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change GFX0 to IGPU</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					R0ZYMA==
-					</data>
-					<key>Replace</key>
-					<data>
-					SUdQVQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change SAT0 to SATA</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					U0FUMA==
+					U0FUMQ==
 					</data>
 					<key>Replace</key>
 					<data>
 					U0FUQQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change 6D03 to 6D00</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					oG2gAw==
-					</data>
-					<key>Replace</key>
-					<data>
-					oG2gAA==
 					</data>
 				</dict>
 				<dict>
@@ -158,161 +106,151 @@
 					<false/>
 					<key>Find</key>
 					<data>
-					X1BUUw==
+					X1BUUwE=
 					</data>
 					<key>Replace</key>
 					<data>
-					WlBUUw==
+					WlBUUwE=
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change _WAK to ZWAK</string>
+					<string>change _WAK to ZWAK (T460)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					X1dBSw==
+					X1dBSwk=
 					</data>
 					<key>Replace</key>
 					<data>
-					WldBSw==
+					WldBSwk=
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change _LID0 to _LID</string>
+					<string>change Notify(\_SB.BAT0 to Notify(_SB.BATC</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					TElEMA==
+					hlwuX1NCX0JBVDA=
 					</data>
 					<key>Replace</key>
 					<data>
-					TElEXw==
+					hlwuX1NCX0JBVEM=
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>XHC:_PRW to XPRW</string>
+					<string>change Notify(\_SB.BAT1 to Notify(_SB.BATC</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					X1BSVw==
+					hlwuX1NCX0JBVDE=
 					</data>
 					<key>Replace</key>
 					<data>
-					WFBSVw==
-					</data>
-					<key>TgtBridge</key>
-					<data>
-					WEhDXw==
+					hlwuX1NCX0JBVEM=
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>XDCI:_PRW to XPRW</string>
+					<string>change Notify(BAT0 to Notify(BATC </string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					X1BSVw==
+					hkJBVDA=
 					</data>
 					<key>Replace</key>
 					<data>
-					WFBSVw==
-					</data>
-					<key>TgtBridge</key>
-					<data>
-					WERDSQ==
+					hkJBVEM=
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>HDEF:_PRW to XPRW</string>
+					<string>change Notify(BAT1 to Notify(BATC </string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					X1BSVw==
+					hkJBVDE=
 					</data>
 					<key>Replace</key>
 					<data>
-					WFBSVw==
+					hkJBVEM=
 					</data>
-					<key>TgtBridge</key>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change HDAS to HDEF</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					SERBUw==
+					</data>
+					<key>Replace</key>
 					<data>
 					SERFRg==
 					</data>
 				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>GLAN:_PRW to XPRW</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					X1BSVw==
-					</data>
-					<key>Replace</key>
-					<data>
-					WFBSVw==
-					</data>
-					<key>TgtBridge</key>
-					<data>
-					R0xBTg==
-					</data>
-				</dict>
 			</array>
-			<key>ReuseFFFF</key>
-			<false/>
 		</dict>
+		<key>DisabledAML</key>
+		<array>
+			<string>SSDT.aml</string>
+			<string>SSDT-XCPM.aml</string>
+			<string>SSDT-PluginType1.aml</string>
+		</array>
 		<key>DropTables</key>
 		<array>
 			<dict>
 				<key>Signature</key>
+				<string>SSDT</string>
+				<key>TableId</key>
+				<string>xh_rvp10</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
 				<string>DMAR</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>SSDT</string>
+				<key>TableId</key>
+				<string>xh_rvp10</string>
 			</dict>
 		</array>
 		<key>FixHeaders</key>
 		<true/>
-		<key>FixMCFG</key>
-		<false/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
 			<false/>
 			<key>Generate</key>
 			<dict>
-				<key>CStates</key>
-				<false/>
-				<key>PStates</key>
-				<false/>
 				<key>PluginType</key>
 				<true/>
 			</dict>
-			<key>PluginType</key>
-			<string>1</string>
+			<key>NoOemTableId</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>keepsyms=1 darkwake=8 lilucpu=9 -igfxnohdmi</string>
-		<key>Debug</key>
-		<false/>
+		<string>keepsyms=1 darkwake=8 lilucpu=9 debug=0x100 kext-dev-mode=1 -igfxnohdmi -cdfon</string>
 		<key>DefaultVolume</key>
-		<string>MacOSX</string>
-		<key>NoEarlyProgress</key>
+		<string>OSX</string>
+		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
 		<integer>1</integer>
-		<key>XMPDetection</key>
-		<false/>
 	</dict>
 	<key>CPU</key>
 	<dict>
@@ -326,9 +264,9 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>47</integer>
+			<integer>0</integer>
 			<key>ResetHDA</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>Properties</key>
 		<dict>
@@ -465,14 +403,25 @@
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal</string>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>layout-id</key>
+				<data>
+				LwAAAA==
+				</data>
+			</dict>
 		</dict>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
 			<true/>
 			<key>FixOwnership</key>
-			<true/>
-			<key>HighCurrent</key>
 			<true/>
 			<key>Inject</key>
 			<true/>
@@ -482,16 +431,15 @@
 	</dict>
 	<key>GUI</key>
 	<dict>
+		<key>Hide</key>
+		<array>
+			<string>Preboot</string>
+			<string>Recovery</string>
+		</array>
 		<key>Mouse</key>
 		<dict>
-			<key>DoubleClick</key>
-			<integer>500</integer>
 			<key>Enabled</key>
 			<false/>
-			<key>Mirror</key>
-			<false/>
-			<key>Speed</key>
-			<integer>8</integer>
 		</dict>
 		<key>Scan</key>
 		<dict>
@@ -499,8 +447,6 @@
 			<true/>
 			<key>Legacy</key>
 			<false/>
-			<key>Linux</key>
-			<true/>
 			<key>Tool</key>
 			<true/>
 		</dict>
@@ -533,13 +479,9 @@
 		<key>AppleIntelCPUPM</key>
 		<true/>
 		<key>AppleRTC</key>
-		<false/>
-		<key>Debug</key>
-		<false/>
-		<key>KernelCpu</key>
-		<false/>
+		<true/>
 		<key>KernelLapic</key>
-		<false/>
+		<true/>
 		<key>KernelPm</key>
 		<true/>
 		<key>KernelToPatch</key>
@@ -548,7 +490,7 @@
 				<key>Comment</key>
 				<string>MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				ILniAAAADzA=
@@ -575,8 +517,6 @@
 				</data>
 			</dict>
 		</array>
-		<key>KernelXCPM</key>
-		<false/>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
@@ -663,11 +603,11 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>08/08/2017</string>
+		<string>12/19/2018</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP143.88Z.0167.B00.1708080129</string>
+		<string>MBP141.88Z.F000.B00.1812191142</string>
 		<key>Board-ID</key>
 		<string>Mac-551B86E5744E2388</string>
 		<key>BoardManufacturer</key>
@@ -684,6 +624,8 @@
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
 		<string>0x09</string>
+		<key>EfiVersion</key>
+		<string>186.0.0.0.0</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
 		<key>FirmwareFeatures</key>
@@ -699,7 +641,7 @@
 		<key>PlatformFeature</key>
 		<string>0x1A</string>
 		<key>ProductName</key>
-		<string>MacBookPro14,3</string>
+		<string>MacBookPro14,1</string>
 		<key>SerialNumber</key>
 		<string>C02VVPOQHTD5</string>
 		<key>SmUUID</key>
