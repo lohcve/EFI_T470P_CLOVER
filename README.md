@@ -1,5 +1,5 @@
 # EFI_T470P
-#### T470P黑苹果EFI文件，10.15 Beta1安装测试通过<br/>
+#### T470P黑苹果EFI文件，10.15 Beta3(19A501i)安装测试通过<br/>
 - 机型：Lenovo T470p 20J6A01ACD，CPU：Intel i7 7700HQ，核显：HD 630<br/>
 - 加装了M.2 2242 SSD 512GB 建兴T11<br/>
 - 加装了三星8G内存<br/>
