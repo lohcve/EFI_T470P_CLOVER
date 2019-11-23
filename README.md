@@ -1,5 +1,5 @@
 # EFI_T470P
-#### T470P黑苹果EFI文件，10.15 Beta3(19A501i)安装测试通过<br/>
+#### T470P黑苹果EFI文件，10.15.1安装测试通过<br/>
 - 机型：Lenovo T470p 20J6A01ACD，CPU：Intel i7 7700HQ，核显：HD 630<br/>
 - 加装了M.2 2242 SSD 512GB 建兴T11<br/>
 - 加装了三星8G内存<br/>
@@ -52,7 +52,6 @@
 - 解决外接hdmi显示器，导致内屏黑屏问题。方法是仿冒kabylake 5916，并设置机型14,2。<br/>
 <br/>
 
-
 #### 2019-05-25更新：<br/>
 - 更新clover到4934<br/>
 - 更新各种驱动到最新版本<br/>
@@ -68,6 +67,11 @@
 - 更新Clover到4979<br/>
 - 更新Lilu、WhateverGreen等各种驱动到最新版本<br/>
 - 更新支持Catalina 10.15 Beta3(19A501i)<br/>
+
+#### 2019-12-23更新：<br/>
+- 更新Clover到5098<br/>
+- 更新Lilu、WhateverGreen等各种驱动到最新版本<br/>
+- 更新支持Catalina 10.15.1<br/>
 - 提供两种核显设置方案，如下：<br/>
 - config-14,1,1916.plist：默认方案，机型14,1，仿冒1916，存在HEVC硬解失败问题，HDMI音频可能失效问题；<br/>
 - config-14,3,591B.plist：备选方案，机型14,3，设置591B，存在启动台和Safari的背景色带（颜色过渡不平滑）问题；<br/>

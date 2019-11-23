@@ -456,10 +456,8 @@
 			<key>Tool</key>
 			<true/>
 		</dict>
-		<key>ScreenResolution</key>
-		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>YosemiteLogin</string>
+		<string>BlackCatalina</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -516,7 +514,7 @@
 				AIoChMB0
 				</data>
 				<key>MatchOS</key>
-				<string>10.14.4,10.14.5,10.15</string>
+				<string>10.14.4,10.14.5,10.15,10.15.1</string>
 				<key>Replace</key>
 				<data>
 				AIoChMDr
@@ -529,7 +527,7 @@
 				<key>Comment</key>
 				<string>Enable TRIM for SSD</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				AEFQUExFIFNTRAA=
@@ -587,6 +585,10 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
+		<key>ROM</key>
+		<data>
+		WEnRaKiN
+		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
