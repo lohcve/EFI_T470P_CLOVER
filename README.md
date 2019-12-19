@@ -57,7 +57,7 @@
 - 更新Lilu、WhateverGreen等各种驱动到最新版本<br/>
 - 更新支持Catalina 10.15 Beta3(19A501i)<br/>
 
-#### 2019-12-23更新：<br/>
+#### 2019-11-23更新：<br/>
 - 更新Clover到5098<br/>
 - 更新Lilu、WhateverGreen等各种驱动到最新版本<br/>
 - 更新支持Catalina 10.15.1<br/>
